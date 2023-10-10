@@ -1,4 +1,5 @@
-import datetime
+from datetime import datetime
+
 from src.core.db import Base
 from sqlalchemy import Column, Integer, DateTime
 

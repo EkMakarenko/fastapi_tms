@@ -1,4 +1,4 @@
-from hw.src.core.managers.hotel_manager import HotelManager
+from src.core.managers.hotel_manager import HotelManager
 
 
 class HotelService:
