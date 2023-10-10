@@ -1,0 +1,11 @@
+import datetime
+from src.core.db import Base
+from sqlalchemy import Column, Integer, DateTime
+
+
+class AbstractModel(Base):
+    __abstract__ = True
+
+    hotel_id = Column('hotel_id', Integer, primary_key=True, autoincrement=True)
+    created_at = Column('created_at', DateTime, default=datetime.now)
+    updated_at = Column('updated_at', DateTime, default=datetime.now, onupdate=datetime.now)
